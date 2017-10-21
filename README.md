@@ -1,2 +1,2 @@
-Lucas Naeshiro Fuzeto
+Lucas Naeshiro Fuzeto \n
 Thiago Albertino Assis
