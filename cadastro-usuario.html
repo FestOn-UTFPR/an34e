@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Fest.On</title>
+	<link rel="stylesheet" href="_css/estilo.css"/>
+	<link rel="stylesheet" href="_css/cadastro-usuario.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="_javascript/funcoes.js"></script>
+    <style>
+        .panel-heading{
+            font-size: 13pt;
+        }
+    </style>
+</head>
+<body>
+    <ul type="disc">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="buscar-eventos.html">Buscar Eventos</a></li>
+        <li><a href="cadastrar-eventos.html">Cadastrar Eventos</a></li>
+        <li><a href="quem-somos.html">Quem somos?</a></li>
+        <li><a href="midias-sociais.html">Contato</a></li>
+        <li><a href="cadastro-usuario.html">Cadastre-se</a></li>
+        <li><a href="login-usuario.html">Entrar<span class="glyphicon">&#xe008;</span></a></li>
+    </ul>
+	<div id="interface">
+		<header id="cabecalho"></header>
+        <div class="panel-heading"></div>
+        <div class="panel-body">
+		    <div class="panel panel-primary">
+                <div class="panel-heading">Cadastro de usuário</div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-10">
+                            <div class="form-group">
+                                <label for="">Nome completo:*</label>
+                                <input type="text" class="form-control" id="valor" placeholder="Digite seu nome">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-10">
+                            <div class="form-group">
+                                <label for="">Data de nascimento:*</label>
+                                <input type="date" class="form-control" id="valor">
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-10">
+                            <label class="control-label" >Digite um e-mail válido:*</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">@</span>
+                                <input type="e-mail" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-10">
+                            <label class="control-label" >Redigite o e-mail:*</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">@</span>
+                                <input type="e-mail" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-10">
+                            <div class="form-group">
+                                <label for="">Digite uma senha:*</label>
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            </div>  
+                        </div> 
+
+                        <div class="col-xs-10">
+                            <div class="form-group">
+                                <label for="">Repita a senha:*</label>
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            </div>  
+                        </div> 
+
+                        <div class="col-xs-10">    
+                            <div class="form-group">
+                                <label for="exampleInputFile">Insira uma foto de perfil:</label>
+                                <input type="file" id="exampleInputFile">
+                                <p class="help-block">Arquivos .PNG, .JPEG, .JPG de no máximo 2Mb.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-10">
+                            <div class="form-group">
+                                <label for="">Escolha seu estado:*</label>
+                                <select id="combo-estado" class="form-control">
+                                    <option value="PR">Paraná</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-10">
+                            <div class="form-group">
+                                <label for="">Escolha sua cidade:*</label>
+                                <select id="combo-cidade" class="form-control">     
+                                    <option>Abatiá</option> <option>Adrianópolis</option> <option>Agudos do Sul</option> <option>Almirante Tamandaré</option> <option>Altamira do Paraná</option> <option>Alto Paraíso</option> <option>Alto Paraná</option> <option>Alto Piquiri</option> <option>Altônia</option> <option>Alvorada do Sul</option> <option>Amaporã</option> <option>Ampére</option> <option>Anahy</option> <option>Andirá</option> <option>Ângulo</option> <option>Antonina</option> <option>Antônio Olinto</option> <option>Apucarana</option> <option>Arapongas</option> <option>Arapoti</option> <option>Arapuã</option> <option>Araruna</option> <option>Araucária</option> <option>Ariranha do Ivaí</option> <option>Assaí</option> <option>Assis Chateaubriand</option> <option>Astorga</option> <option>Atalaia</option> <option>Balsa Nova</option> <option>Bandeirantes</option> <option>Barbosa Ferraz</option> <option>Barra do Jacaré</option> <option>Barracão</option> <option>Bela Vista da Caroba</option> <option>Bela Vista do Paraíso</option> <option>Bituruna</option> <option>Boa Esperança</option> <option>Boa Esperança do Iguaçu</option> <option>Boa Ventura de São Roque</option> <option>Boa Vista da Aparecida</option> <option>Bocaiúva do Sul</option> <option>Bom Jesus do Sul</option> <option>Bom Sucesso</option> <option>Bom Sucesso do Sul</option> <option>Borrazópolis</option> <option>Braganey</option> <option>Brasilândia do Sul</option> <option>Cafeara</option> <option>Cafelândia</option> <option>Cafezal do Sul</option> <option>Califórnia</option> <option>Cambará</option> <option>Cambé</option> <option>Cambira</option> <option>Campina da Lagoa</option> <option>Campina do Simão</option> <option>Campina Grande do Sul</option> <option>Campo Bonito</option> <option>Campo do Tenente</option> <option>Campo Largo</option> <option>Campo Magro</option> <option>Campo Mourão</option> <option>Cândido de Abreu</option> <option>Candói</option> <option>Cantagalo</option> <option>Capanema</option> <option>Capitão Leônidas Marques</option> <option>Carambeí</option> <option>Carlópolis</option> <option>Cascavel</option> <option>Castro</option> <option>Catanduvas</option> <option>Centenário do Sul</option> <option>Cerro Azul</option> <option>Céu Azul</option> <option>Chopinzinho</option> <option>Cianorte</option> <option>Cidade Gaúcha</option> <option>Clevelândia</option> <option>Colombo</option> <option>Colorado</option> <option>Congonhinhas</option> <option>Conselheiro Mairinck</option> <option>Contenda</option> <option>Corbélia</option> <option>Cornélio Procópio</option> <option>Coronel Domingos Soares</option> <option>Coronel Vivida</option> <option>Corumbataí do Sul</option> <option>Cruz Machado</option> <option>Cruzeiro do Iguaçu</option> <option>Cruzeiro do Oeste</option> <option>Cruzeiro do Sul</option> <option>Cruzmaltina</option> <option>Curitiba</option> <option>Curiúva</option> <option>Diamante d'Oeste</option> <option>Diamante do Norte</option> <option>Diamante do Sul</option> <option>Dois Vizinhos</option> <option>Douradina</option> <option>Doutor Camargo</option> <option>Doutor Ulysses</option> <option>Enéas Marques</option> <option>Engenheiro Beltrão</option> <option>Entre Rios do Oeste</option> <option>Esperança Nova</option> <option>Espigão Alto do Iguaçu</option> <option>Farol</option> <option>Faxinal</option> <option>Fazenda Rio Grande</option> <option>Fênix</option> <option>Fernandes Pinheiro</option> <option>Figueira</option> <option>Flor da Serra do Sul</option> <option>Floraí</option> <option>Floresta</option> <option>Florestópolis</option> <option>Flórida</option> <option>Formosa do Oeste</option> <option>Foz do Iguaçu</option> <option>Foz do Jordão</option> <option>Francisco Alves</option> <option>Francisco Beltrão</option> <option>General Carneiro</option> <option>Godoy Moreira</option> <option>Goioerê</option> <option>Goioxim</option> <option>Grandes Rios</option> <option>Guaíra</option> <option>Guairaçá</option> <option>Guamiranga</option> <option>Guapirama</option> <option>Guaporema</option> <option>Guaraci</option> <option>Guaraniaçu</option> <option>Guarapuava</option> <option>Guaraqueçaba</option> <option>Guaratuba</option> <option>Honório Serpa</option> <option>Ibaiti</option> <option>Ibema</option> <option>Ibiporã</option> <option>Icaraíma</option> <option>Iguaraçu</option> <option>Iguatu</option> <option>Imbaú</option> <option>Imbituva</option> <option>Inácio Martins</option> <option>Inajá</option> <option>Indianópolis</option> <option>Ipiranga</option> <option>Iporã</option> <option>Iracema do Oeste</option> <option>Irati</option> <option>Iretama</option> <option>Itaguajé</option> <option>Itaipulândia</option> <option>Itambaracá</option> <option>Itambé</option> <option>Itapejara d'Oeste</option> <option>Itaperuçu</option> <option>Itaúna do Sul</option> <option>Ivaí</option> <option>Ivaiporã</option> <option>Ivaté</option> <option>Ivatuba</option> <option>Jaboti</option> <option>Jacarezinho</option> <option>Jaguapitã</option> <option>Jaguariaíva</option> <option>Jandaia do Sul</option> <option>Janiópolis</option> <option>Japira</option> <option>Japurá</option> <option>Jardim Alegre</option> <option>Jardim Olinda</option> <option>Jataizinho</option> <option>Jesuítas</option> <option>Joaquim Távora</option> <option>Jundiaí do Sul</option> <option>Juranda</option> <option>Jussara</option> <option>Kaloré</option> <option>Lapa</option> <option>Laranjal</option> <option>Laranjeiras do Sul</option> <option>Leópolis</option> <option>Lidianópolis</option> <option>Lindoeste</option> <option>Loanda</option> <option>Lobato</option> <option>Londrina</option> <option>Luiziana</option> <option>Lunardelli</option> <option>Lupionópolis</option> <option>Mallet</option> <option>Mamborê</option> <option>Mandaguaçu</option> <option>Mandaguari</option> <option>Mandirituba</option> <option>Manfrinópolis</option> <option>Mangueirinha</option> <option>Manoel Ribas</option> <option>Marechal Cândido Rondon</option> <option>Maria Helena</option> <option>Marialva</option> <option>Marilândia do Sul</option> <option>Marilena</option> <option>Mariluz</option> <option>Maringá</option> <option>Mariópolis</option> <option>Maripá</option> <option>Marmeleiro</option> <option>Marquinho</option> <option>Marumbi</option> <option>Matelândia</option> <option>Matinhos</option> <option>Mato Rico</option> <option>Mauá da Serra</option> <option>Medianeira</option> <option>Mercedes</option> <option>Mirador</option> <option>Miraselva</option> <option>Missal</option> <option>Moreira Sales</option> <option>Morretes</option> <option>Munhoz de Melo</option> <option>Nossa Senhora das Graças</option> <option>Nova Aliança do Ivaí</option> <option>Nova América da Colina</option> <option>Nova Aurora</option> <option>Nova Cantu</option> <option>Nova Esperança</option> <option>Nova Esperança do Sudoeste</option> <option>Nova Fátima</option> <option>Nova Laranjeiras</option> <option>Nova Londrina</option> <option>Nova Olímpia</option> <option>Nova Prata do Iguaçu</option> <option>Nova Santa Bárbara</option> <option>Nova Santa Rosa</option> <option>Nova Tebas</option> <option>Novo Itacolomi</option> <option>Ortigueira</option> <option>Ourizona</option> <option>Ouro Verde do Oeste</option> <option>Paiçandu</option> <option>Palmas</option> <option>Palmeira</option> <option>Palmital</option> <option>Palotina</option> <option>Paraíso do Norte</option> <option>Paranacity</option> <option>Paranaguá</option> <option>Paranapoema</option> <option>Paranavaí</option> <option>Pato Bragado</option> <option>Pato Branco</option> <option>Paula Freitas</option> <option>Paulo Frontin</option> <option>Peabiru</option> <option>Perobal</option> <option>Pérola</option> <option>Pérola d'Oeste</option> <option>Piên</option> <option>Pinhais</option> <option>Pinhal de São Bento</option> <option>Pinhalão</option> <option>Pinhão</option> <option>Piraí do Sul</option> <option>Piraquara</option> <option>Pitanga</option> <option>Pitangueiras</option> <option>Planaltina do Paraná</option> <option>Planalto</option> <option>Ponta Grossa</option> <option>Pontal do Paraná</option> <option>Porecatu</option> <option>Porto Amazonas</option> <option>Porto Barreiro</option> <option>Porto Rico</option> <option>Porto Vitória</option> <option>Prado Ferreira</option> <option>Pranchita</option> <option>Presidente Castelo Branco</option> <option>Primeiro de Maio</option> <option>Prudentópolis</option> <option>Quarto Centenário</option> <option>Quatiguá</option> <option>Quatro Barras</option> <option>Quatro Pontes</option> <option>Quedas do Iguaçu</option> <option>Querência do Norte</option> <option>Quinta do Sol</option> <option>Quitandinha</option> <option>Ramilândia</option> <option>Rancho Alegre</option> <option>Rancho Alegre d'Oeste</option> <option>Realeza</option> <option>Rebouças</option> <option>Renascença</option> <option>Reserva</option> <option>Reserva do Iguaçu</option> <option>Ribeirão Claro</option> <option>Ribeirão do Pinhal</option> <option>Rio Azul</option> <option>Rio Bom</option> <option>Rio Bonito do Iguaçu</option> <option>Rio Branco do Ivaí</option> <option>Rio Branco do Sul</option> <option>Rio Negro</option> <option>Rolândia</option> <option>Roncador</option> <option>Rondon</option> <option>Rosário do Ivaí</option> <option>Sabáudia</option> <option>Salgado Filho</option> <option>Salto do Itararé</option> <option>Salto do Lontra</option> <option>Santa Amélia</option> <option>Santa Cecília do Pavão</option> <option>Santa Cruz de Monte Castelo</option> <option>Santa Fé</option> <option>Santa Helena</option> <option>Santa Inês</option> <option>Santa Isabel do Ivaí</option> <option>Santa Izabel do Oeste</option> <option>Santa Lúcia</option> <option>Santa Maria do Oeste</option> <option>Santa Mariana</option> <option>Santa Mônica</option> <option>Santa Tereza do Oeste</option> <option>Santa Terezinha de Itaipu</option> <option>Santana do Itararé</option> <option>Santo Antônio da Platina</option> <option>Santo Antônio do Caiuá</option> <option>Santo Antônio do Paraíso</option> <option>Santo Antônio do Sudoeste</option> <option>Santo Inácio</option> <option>São Carlos do Ivaí</option> <option>São Jerônimo da Serra</option> <option>São João</option> <option>São João do Caiuá</option> <option>São João do Ivaí</option> <option>São João do Triunfo</option> <option>São Jorge d'Oeste</option> <option>São Jorge do Ivaí</option> <option>São Jorge do Patrocínio</option> <option>São José da Boa Vista</option> <option>São José das Palmeiras</option> <option>São José dos Pinhais</option> <option>São Manoel do Paraná</option> <option>São Mateus do Sul</option> <option>São Miguel do Iguaçu</option> <option>São Pedro do Iguaçu</option> <option>São Pedro do Ivaí</option> <option>São Pedro do Paraná</option> <option>São Sebastião da Amoreira</option> <option>São Tomé</option> <option>Sapopema</option> <option>Sarandi</option> <option>Saudade do Iguaçu</option> <option>Sengés</option> <option>Serranópolis do Iguaçu</option> <option>Sertaneja</option> <option>Sertanópolis</option> <option>Siqueira Campos</option> <option>Sulina</option> <option>Tamarana</option> <option>Tamboara</option> <option>Tapejara</option> <option>Tapira</option> <option>Teixeira Soares</option> <option>Telêmaco Borba</option> <option>Terra Boa</option> <option>Terra Rica</option> <option>Terra Roxa</option> <option>Tibagi</option> <option>Tijucas do Sul</option> <option>Toledo</option> <option>Tomazina</option> <option>Três Barras do Paraná</option> <option>Tunas do Paraná</option> <option>Tuneiras do Oeste</option> <option>Tupãssi</option> <option>Turvo</option> <option>Ubiratã</option> <option>Umuarama</option> <option>União da Vitória</option> <option>Uniflor</option> <option>Uraí</option> <option>Ventania</option> <option>Vera Cruz do Oeste</option> <option>Verê</option> <option>Virmond</option> <option>Vitorino</option> <option>Wenceslau Braz</option> <option>Xambrê</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-10">
+                            <div class="form-group">
+                                <label for="">Digite seu número de celular:*</label>
+                                <input type="tel" class="form-control" id="valor" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-10">
+                            <div class="checkbox">
+                                <label>
+                                <input type="checkbox">Aceito os termos de de uso e privacidade
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-10">
+                            <div class="checkbox">
+                                <label>
+                                <input type="checkbox">Quero receber e-mails com novidades sobre o Fest.On
+                                </label>
+                            </div>
+                        </div>     
+
+                        <div class="col-xs-10">
+                            <button type="submit" class="btn btn-info">Cadastrar usuário</button>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+		<footer id="rodape">
+			<p>
+				Copyright &copy; 2017 - by Fest.On Company
+				<a href="https://www.facebook.com/" target="_blank">Facebook</a> | <a href="https://www.instagram.com/" target="_blank">Instagram</a> | <a href="https://www.youtube.com/" target="_blank">Youtube</a> | <a href="https://twitter.com/" target="_blank">Twitter</a>
+			</p>
+		</footer>
+	</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+</body>
+</html>
